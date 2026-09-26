@@ -44,7 +44,7 @@ app.use('/api/files',          require('./src/routes/files'));
 
 // ── Health check ─────────────────────────────────────────────
 app.get('/api/health', (req, res) => res.json({
-  success: true, message: 'Antigravity API is running',
+  success: true, message: 'Creativity API is running',
   version: '1.0.0', timestamp: new Date().toISOString()
 }));
 
@@ -59,7 +59,7 @@ const start = async () => {
   try {
     await syncDB();
     app.listen(PORT, () => {
-      console.log(`\n🚀 Antigravity API running on http://localhost:${PORT}`);
+      console.log(`\n🚀 Creativity API running on http://localhost:${PORT}`);
       console.log(`📋 Health: http://localhost:${PORT}/api/health`);
       console.log(`🌍 CORS origin: ${process.env.CLIENT_URL || 'http://localhost:5173'}\n`);
     });

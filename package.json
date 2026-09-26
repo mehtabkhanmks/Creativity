@@ -1,8 +1,8 @@
 {
-  "name": "antigravity",
+  "name": "creativity",
   "version": "1.0.0",
   "private": true,
-  "description": "Antigravity — Universal Creative Asset & Intellectual Property Exchange",
+  "description": "Creativity — Universal Creative Asset & Intellectual Property Exchange",
   "scripts": {
     "dev": "npm --prefix client run dev",
     "client": "npm --prefix client run dev",
@@ -11,13 +11,13 @@
     "install:all": "npm --prefix client install && npm --prefix server install"
   },
   "keywords": [
-    "antigravity",
+    "creativity",
     "creative-assets",
     "intellectual-property",
     "marketplace",
     "react",
     "express"
   ],
-  "author": "Antigravity Platform",
+  "author": "Creativity Platform",
   "license": "ISC"
 }

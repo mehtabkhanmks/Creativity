@@ -73,17 +73,17 @@ export default function Footer() {
 
           {/* Col 4: Studio Hub */}
           <div className="slate-col slate-address">
-            <h4>ANTIGRAVITY HQ</h4>
+            <h4>CREATIVITY HQ</h4>
             <p>615 Market St, Suite 400<br />San Francisco, CA 94105<br />(415) 890-2100</p>
           </div>
 
           {/* Col 5: Brand & Copyright */}
           <div className="slate-col slate-brand-col">
             <Link to="/" className="slate-logo">
-              Antigravity
+              Creativity
             </Link>
             <p className="slate-copy">
-              Copyright © 2026 Antigravity. All rights reserved.
+              Copyright © 2026 Creativity. All rights reserved.
             </p>
           </div>
         </div>

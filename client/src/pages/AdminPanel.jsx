@@ -54,7 +54,7 @@ export default function AdminPanel() {
       const password = adminPassword.trim();
 
       // Check specific admin credentials requested
-      if ((email === 'admin@antigravity.io' || email === 'admin@narrativeengine.io') && (password === 'password123' || password === 'admin123')) {
+      if ((email === 'admin@creativity.io' || email === 'admin@antigravity.io' || email === 'admin@narrativeengine.io') && (password === 'password123' || password === 'admin123')) {
         const res = await login(email, 'password123');
         setAdminUnlocked(true);
         toast.success('🛡️ Authenticated as Master Admin!');
@@ -77,7 +77,7 @@ export default function AdminPanel() {
   };
 
   const handleAutofillAdmin = () => {
-    setAdminEmail('admin@antigravity.io');
+    setAdminEmail('admin@creativity.io');
     setAdminPassword('password123');
     toast.success('Admin credentials autofilled!');
   };
@@ -132,7 +132,7 @@ export default function AdminPanel() {
     { id: 'u3', name: 'J. Dubois', email: 'dubois@example.com', role: 'creator', isVerified: true, totalEarnings: 0 },
     { id: 'u4', name: 'Quant Group', email: 'quant@example.com', role: 'creator', isVerified: true, totalEarnings: 25000.00 },
     { id: 'u5', name: 'Sarah Jenkins', email: 'sarah@example.com', role: 'collaborator', isVerified: true, totalEarnings: 0 },
-    { id: 'u6', name: 'Admin Master', email: 'admin@antigravity.io', role: 'admin', isVerified: true, totalEarnings: 0 },
+    { id: 'u6', name: 'Admin Master', email: 'admin@creativity.io', role: 'admin', isVerified: true, totalEarnings: 0 },
   ];
 
   const getFallbackActivity = () => [
@@ -210,7 +210,7 @@ export default function AdminPanel() {
             <div>🔑 <strong>Authorized Admin Credentials:</strong></div>
             <div className="admin-cred-row">
               <span>Admin Gmail:</span>
-              <strong style={{ color: '#818CF8' }}>admin@antigravity.io</strong>
+              <strong style={{ color: '#818CF8' }}>admin@creativity.io</strong>
             </div>
             <div className="admin-cred-row">
               <span>Password:</span>
@@ -228,7 +228,7 @@ export default function AdminPanel() {
                 type="email"
                 className="form-input"
                 style={{ background: '#070B16', color: '#FFFFFF', borderColor: 'rgba(255,255,255,0.2)' }}
-                placeholder="admin@antigravity.io"
+                placeholder="admin@creativity.io"
                 value={adminEmail}
                 onChange={(e) => setAdminEmail(e.target.value)}
                 required

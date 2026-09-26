@@ -44,13 +44,13 @@ const sendVerificationCode = async ({ email, role = 'creator', name = '' }) => {
       });
 
       await transporter.sendMail({
-        from: `"Antigravity Security" <${process.env.SMTP_USER}>`,
+        from: `"Creativity Security" <${process.env.SMTP_USER}>`,
         to: email,
-        subject: `${code} is your Antigravity Verification Code`,
+        subject: `${code} is your Creativity Verification Code`,
         html: `
           <div style="font-family: 'Inter', Arial, sans-serif; max-width: 520px; margin: 0 auto; padding: 28px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px;">
             <div style="text-align: center; margin-bottom: 24px;">
-              <h2 style="font-family: Georgia, serif; font-size: 24px; color: #0F172A; margin: 0;">Antigravity</h2>
+              <h2 style="font-family: Georgia, serif; font-size: 24px; color: #0F172A; margin: 0;">Creativity</h2>
               <p style="color: #64748B; font-size: 13px; margin-top: 4px;">Universal Creative Asset &amp; IP Platform</p>
             </div>
             <div style="background: #F8FAFC; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #E2E8F0; margin-bottom: 24px;">

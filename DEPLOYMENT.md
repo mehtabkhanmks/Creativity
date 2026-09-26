@@ -1,6 +1,6 @@
-# 🚀 Antigravity Deployment Guide
+# 🚀 Creativity Deployment Guide
 
-This guide walks you through deploying the **Antigravity** platform to **GitHub** and **Vercel** (for the frontend), along with hosting options for the backend.
+This guide walks you through deploying the **Creativity** platform to **GitHub** and **Vercel** (for the frontend), along with hosting options for the backend.
 
 ---
 
@@ -17,7 +17,7 @@ git status
 
 # Add files and commit
 git add .
-git commit -m "feat: Initial commit for Antigravity"
+git commit -m "feat: Initial commit for Creativity platform"
 
 # Rename branch to main
 git branch -M main
@@ -40,7 +40,7 @@ Vercel is the recommended hosting platform for the Vite/React frontend.
 
 1. Log in to [Vercel](https://vercel.com).
 2. Click **"Add New..."** -> **"Project"**.
-3. Import your GitHub repository (`antigravity`).
+3. Import your GitHub repository (`creativity`).
 4. Set Project Configuration:
    - **Root Directory:** If prompted, choose `./` or `client`. Both work out of the box because `vercel.json` files are prepared in both locations.
    - **Build Command:** `npm run build`
@@ -69,16 +69,16 @@ Because the backend uses Node.js/Express, we recommend **Render** or **Railway**
 5. Under **Environment Variables**, add:
    - `NODE_ENV`: `production`
    - `JWT_SECRET`: *(A secure random string)*
-   - `CLIENT_URL`: `https://your-antigravity-frontend.vercel.app`
+   - `CLIENT_URL`: `https://your-creativity-frontend.vercel.app`
 6. Click **Create Web Service**.
-7. Copy the service URL (e.g., `https://antigravity-api.onrender.com`) and paste `https://antigravity-api.onrender.com/api` into your Vercel `VITE_API_URL` environment variable!
+7. Copy the service URL (e.g., `https://creativity-api.onrender.com`) and paste `https://creativity-api.onrender.com/api` into your Vercel `VITE_API_URL` environment variable!
 
 ---
 
 ## 4. Verification Checklist
 
-- [x] Application rebranded to **Antigravity**
+- [x] Application rebranded to **Creativity**
 - [x] Root `.gitignore` prevents leaks of `.env`, `database.sqlite`, and `node_modules`
 - [x] `.env.example` templates created for client and server
 - [x] `vercel.json` configured with SPA routing rules
-- [x] Master Admin Portal (`/admin`) login verified (`admin@antigravity.io` / `password123`)
+- [x] Master Admin Portal (`/admin`) login verified (`admin@creativity.io` / `password123`)

@@ -16,7 +16,7 @@ const marqueeItems = [
 const heroSlides = [
   {
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&auto=format&fit=crop&q=90',
-    tag: '🌟 Antigravity Platform',
+    tag: '🌟 Creativity Platform',
     headline: 'Share Your Talent. Name It. Price It. Change the World.',
     desc: 'The ultimate platform for creators, buyers, and collaborators — where every story, idea, and skill finds its rightful audience and true value.',
     cta: 'Get Started Free',

@@ -1,7 +1,7 @@
 {
-  "name": "antigravity-server",
+  "name": "creativity-server",
   "version": "1.0.0",
-  "description": "Antigravity API — Node.js/Express backend",
+  "description": "Creativity API — Node.js/Express backend",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

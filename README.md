@@ -1,15 +1,15 @@
-# 🌌 Antigravity
+# ✨ Creativity
 
 > **Universal Creative Asset & Intellectual Property Exchange**  
-> *Where Vision Defies Limits — for creators, buyers, and innovators.*
+> *Where Vision Meets Capital — for creators, buyers, and innovators.*
 
 ---
 
 ## ✦ Overview
 
-**Antigravity** is a high-performance web platform designed to empower creators, authors, screenplay writers, audio producers, and software architects to publish, protect, monetize, and co-build original intellectual property.
+**Creativity** is a high-performance web platform designed to empower creators, authors, screenplay writers, audio producers, and software architects to publish, protect, monetize, and co-build original intellectual property.
 
-Whether licensing rights, selling creative assets outright, or forming collaborative revenue-share teams, Antigravity bridges the gap between raw creative vision and capital.
+Whether licensing rights, selling creative assets outright, or forming collaborative revenue-share teams, Creativity bridges the gap between raw creative vision and capital.
 
 ---
 
@@ -48,7 +48,7 @@ MY New Idea/
 │   │   ├── components/     # Navbar, Footer, ListingCard, etc.
 │   │   ├── context/        # Auth & Global state context
 │   │   ├── pages/          # Landing, Marketplace, Collaborate, Admin, etc.
-│   │   └── index.css       # Antigravity Design System
+│   │   └── index.css       # Creativity Design System
 │   ├── .env.example        # Client environment template
 │   ├── vercel.json         # Vercel SPA rewrite configuration
 │   └── package.json
@@ -76,8 +76,8 @@ MY New Idea/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/antigravity.git
-cd antigravity
+git clone https://github.com/your-username/creativity.git
+cd creativity
 ```
 
 ### 2. Configure Environment Variables
@@ -117,7 +117,7 @@ Open `http://localhost:5173` in your browser.
 ## 🛡️ Default Admin Credentials
 
 To access the platform's Master Admin Portal at `/admin`:
-- **Email:** `admin@antigravity.io` (or `admin@narrativeengine.io`)
+- **Email:** `admin@creativity.io`
 - **Password:** `password123`
 *(A 1-Click Autofill button is also available directly on the admin gate screen for seamless testing).*
 
@@ -129,15 +129,15 @@ To access the platform's Master Admin Portal at `/admin`:
 ```bash
 git init
 git add .
-git commit -m "feat: Initial commit of Antigravity platform"
+git commit -m "feat: rebrand to Creativity and prepare for GitHub and Vercel"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/antigravity.git
+git remote add origin https://github.com/YOUR_USERNAME/creativity.git
 git push -u origin main
 ```
 
 ### Step 2: Deploy Frontend on Vercel
 1. Go to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-2. Select your imported `antigravity` GitHub repository.
+2. Select your imported `creativity` GitHub repository.
 3. Configure settings:
    - **Framework Preset:** Vite
    - **Root Directory:** Either `./` (Root) or `client` (Both are pre-configured with `vercel.json` rewrite rules).
@@ -147,4 +147,4 @@ git push -u origin main
 ---
 
 ## 📄 License
-ISC © 2026 Antigravity. All rights reserved.
+ISC © 2026 Creativity. All rights reserved.

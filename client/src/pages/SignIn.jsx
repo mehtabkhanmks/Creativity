@@ -203,7 +203,7 @@ export default function SignIn() {
       <div className="auth-card-wrapper">
         {/* Header */}
         <div className="auth-header">
-          <Link to="/" className="auth-brand-logo">Antigravity</Link>
+          <Link to="/" className="auth-brand-logo">Creativity</Link>
           <h1 className="auth-title">
             {step === 1 ? 'Sign In & Select Role' : 'Enter Gmail Verification Code'}
           </h1>
@@ -408,7 +408,7 @@ export default function SignIn() {
 
             <div style={{ padding: '1.5rem' }}>
               <p style={{ fontSize: '0.85rem', color: '#94A3B8', marginBottom: '1rem' }}>
-                to continue to <strong style={{ color: '#FFFFFF' }}>Antigravity</strong>
+                to continue to <strong style={{ color: '#FFFFFF' }}>Creativity</strong>
               </p>
 
               <div className="google-account-list">

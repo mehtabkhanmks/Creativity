@@ -49,12 +49,11 @@ export default function Navbar() {
       <div className="top-brand-bar">
         <div className="top-brand-inner">
           <Link to="/" className="perini-brand-logo">
-            <span className="perini-logo-text">Anti</span>
-            <span className="perini-logo-sub">gravity</span>
+            <span className="perini-logo-text">Creativity</span>
           </Link>
           <div className="top-brand-tagline">
-            <span className="tagline-main">WHERE VISION DEFIES LIMITS</span>
-            <span className="tagline-sub">for creative assets &amp; verified intellectual property</span>
+            <span className="tagline-main">WHERE CREATIVITY MEETS CAPITAL</span>
+            <span className="tagline-sub">for original works &amp; verified intellectual property</span>
           </div>
         </div>
       </div>

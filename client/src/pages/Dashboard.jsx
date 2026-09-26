@@ -115,7 +115,7 @@ export default function Dashboard() {
         title: contentName.trim(),
         price: parseFloat(price),
         description: description.trim() || contentName.trim(),
-        summary: description.trim().slice(0, 120) || 'Creative asset on Antigravity',
+        summary: description.trim().slice(0, 120) || 'Creative asset on Creativity',
         category: mediaType === 'video' ? 'stories' : mediaType === 'audio' ? 'creative' : 'business',
         mediaType: mediaType,
         verificationStatus: 'verified',
