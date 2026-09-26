@@ -707,3 +707,45 @@
   cursor: pointer;
 }
 
+@media (max-width: 900px) {
+  .creator-studio-layout {
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+  }
+  .studio-sidebar {
+    padding: 1.25rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid #E5E0DB;
+  }
+  .studio-profile-card {
+    padding-bottom: 1rem;
+  }
+  .studio-nav-menu {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.4rem;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.35rem;
+  }
+  .studio-nav-item {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.78rem;
+  }
+  .studio-main-feed {
+    padding: 1.5rem 1rem;
+  }
+  .studio-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .studio-table-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .listings-table {
+    min-width: 540px;
+  }
+}
+

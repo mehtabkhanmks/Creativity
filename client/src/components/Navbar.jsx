@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './Navbar.css';
@@ -9,8 +9,16 @@ export default function Navbar() {
   const [hasNotif, setHasNotif] = useState(true);
   const [showNotifMenu, setShowNotifMenu] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  // Close menus on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setShowNotifMenu(false);
+    setShowUserMenu(false);
+  }, [location.pathname]);
 
   const handleSearchSubmit = (e) => {
     if (e) e.preventDefault();
@@ -48,12 +56,27 @@ export default function Navbar() {
       {/* Top Brand Bar */}
       <div className="top-brand-bar">
         <div className="top-brand-inner">
-          <Link to="/" className="perini-brand-logo">
+          <Link to="/" className="perini-brand-logo" onClick={() => setMobileMenuOpen(false)}>
             <span className="perini-logo-text">Creativity</span>
           </Link>
           <div className="top-brand-tagline">
             <span className="tagline-main">WHERE CREATIVITY MEETS CAPITAL</span>
             <span className="tagline-sub">for original works &amp; verified intellectual property</span>
+          </div>
+
+          {/* Mobile Actions Header Bar (Visible on mobile <= 900px) */}
+          <div className="mobile-header-actions">
+            <Link to="/sell" className="mobile-pill-btn" onClick={() => setMobileMenuOpen(false)}>
+              + Upload
+            </Link>
+            <button
+              type="button"
+              className="mobile-hamburger-btn"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle Navigation"
+            >
+              {mobileMenuOpen ? '✕' : '☰'}
+            </button>
           </div>
         </div>
       </div>
@@ -196,12 +219,89 @@ export default function Navbar() {
             </div>
           ) : (
             <Link to="/signin" className="btn-signin-nav">
-              Verify & Login
+              Verify &amp; Login
             </Link>
           )}
           </div>
         </div>
       </div>
+
+      {/* ── Mobile Navigation Drawer ── */}
+      {mobileMenuOpen && (
+        <div className="mobile-nav-drawer">
+          {/* Mobile Search */}
+          <form className="mobile-search-form" onSubmit={(e) => { handleSearchSubmit(e); setMobileMenuOpen(false); }}>
+            <div className="search-input-wrapper">
+              <svg className="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search IP, scripts, blueprints..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="search-input"
+              />
+            </div>
+            <button type="submit" className="mobile-search-btn">Search</button>
+          </form>
+
+          {/* Mobile Nav Links */}
+          <nav className="mobile-nav-links">
+            <Link to="/" className={`mobile-nav-link ${isActive('/')}`} onClick={() => setMobileMenuOpen(false)}>
+              WELCOME
+            </Link>
+            <Link to="/sell" className={`mobile-nav-link ${isActive('/sell')}`} onClick={() => setMobileMenuOpen(false)}>
+              CREATE &amp; SELL
+            </Link>
+            <Link to="/buy" className={`mobile-nav-link ${isActive('/buy')}`} onClick={() => setMobileMenuOpen(false)}>
+              DISCOVER &amp; BUY
+            </Link>
+            <Link to="/collaborate" className={`mobile-nav-link ${isActive('/collaborate')}`} onClick={() => setMobileMenuOpen(false)}>
+              COLLABORATE
+            </Link>
+            <Link to="/admin" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: '#D92D20', fontWeight: 700 }}>
+              🛡️ ADMIN PORTAL
+            </Link>
+          </nav>
+
+          {/* Quick Mobile Action Buttons */}
+          <div className="mobile-drawer-actions">
+            <Link to="/buy" className="mobile-action-btn-red" onClick={() => setMobileMenuOpen(false)}>
+              ♥ VIEW ASSETS
+            </Link>
+            <Link to="/sell" className="mobile-action-btn-dark" onClick={() => setMobileMenuOpen(false)}>
+              + UPLOAD YOUR WORK
+            </Link>
+          </div>
+
+          {/* Mobile User Profile Section */}
+          <div className="mobile-auth-footer">
+            {isAuth ? (
+              <div className="mobile-user-card">
+                <div className="mobile-user-row">
+                  <div className="user-avatar-circle">
+                    {user?.avatar ? <img src={user.avatar} alt={user.name} /> : <span>{user?.name?.charAt(0) || 'U'}</span>}
+                  </div>
+                  <div className="mobile-user-meta">
+                    <strong>{user?.name}</strong>
+                    <span>{user?.email}</span>
+                  </div>
+                  <span className="badge badge-role">{user?.role?.toUpperCase() || 'CREATOR'}</span>
+                </div>
+                <button onClick={() => { handleLogout(); setMobileMenuOpen(false); }} className="btn-dropdown-logout mobile-logout-btn">
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <Link to="/signin" className="btn-signin-nav mobile-signin-full" onClick={() => setMobileMenuOpen(false)}>
+                Verify &amp; Login
+              </Link>
+            )}
+          </div>
+        </div>
+      )}
     </header>
   );
 }

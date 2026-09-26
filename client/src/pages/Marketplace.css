@@ -530,8 +530,51 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .marketplace-page {
+    padding: 5rem 0 3rem;
+  }
+  .marketplace-container {
+    padding: 0 1rem;
+  }
+  .marketplace-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .marketplace-title {
+    font-size: 1.85rem;
+  }
+  .marketplace-controls-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .marketplace-page-search {
+    width: 100%;
+  }
+  .page-search-wrapper {
+    width: 100%;
+    flex: 1;
+  }
+  .sort-dropdown-col {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .sort-select {
+    flex: 1;
+  }
+  .marketplace-quick-pills-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
   .asset-cards-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }

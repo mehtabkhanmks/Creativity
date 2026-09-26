@@ -1614,7 +1614,7 @@
 }
 
 /* ════════════════════════════════════════════════════════════
-   RESPONSIVE
+   RESPONSIVE DESIGN (Full Mobile Optimization)
    ════════════════════════════════════════════════════════════ */
 @media (max-width: 1100px) {
   .lp-cat-grid {
@@ -1625,54 +1625,178 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
+  /* 5-Card Showcase Stack for Mobile */
+  .perini-photo-grid-section {
+    padding: 3rem 0;
+  }
+  .perini-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .perini-card--large,
+  .perini-card--med,
+  .perini-card--small {
+    grid-column: span 1 !important;
+    min-height: 280px;
+    width: 100%;
+  }
+  .perini-card-content {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+  }
+  .perini-card-title {
+    font-size: 1.35rem;
+  }
+  .perini-card-btn-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    gap: 0.5rem;
+  }
+  .btn-perini-card-red,
+  .btn-perini-card-grey,
+  .btn-perini-card-slate,
+  .btn-perini-card-ochre,
+  .btn-perini-card-outline {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* Hero Mobile Layout */
+  .lp-hero {
+    height: auto !important;
+    min-height: 100vh;
+    padding-top: 24px;
+    padding-bottom: 70px;
+    overflow: visible;
+  }
   .lp-hero-inner {
-    padding: 0 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    padding: 0 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
   }
-  .lp-hero-headline {
-    font-size: clamp(2.1rem, 6.5vw, 3.2rem);
+  .lp-hero-text-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .lp-hero-actions {
-    margin-bottom: 2.5rem;
+  .perini-hero-quote-block {
+    margin-bottom: 1.5rem;
+  }
+  .perini-hero-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+  .perini-hero-headline {
+    font-size: clamp(2rem, 7.5vw, 3rem);
+    line-height: 1.15;
+  }
+  .lp-hero-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto 1.75rem;
+  }
+  .lp-hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 0.75rem;
+    margin: 0 auto 2rem;
+  }
+  .btn-perini-primary,
+  .btn-perini-secondary {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .lp-hero-stats-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+  .lp-hero-stat-sep {
+    display: none;
+  }
+  .lp-hero-card-col {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
   }
   .lp-hero-nav {
-    bottom: 3.5rem;
-    right: 1.5rem;
+    position: static;
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  /* Section Spacing & Text */
+  .lp-section-inner {
+    padding: 0 1.25rem;
+  }
+  .lp-section-title {
+    font-size: clamp(1.75rem, 5.5vw, 2.4rem);
+  }
+  .lp-section-sub {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  .lp-engage {
+    padding: 3.5rem 0;
   }
   .lp-engage-grid {
     grid-template-columns: 1fr;
     max-width: 520px;
     margin: 0 auto;
-  }
-  .lp-cat-grid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   .lp-security-roadmap {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 640px) {
-  .lp-hero-actions,
+  .lp-cat-grid {
+    grid-template-columns: 1fr;
+  }
   .lp-final-cta-btns {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
   }
-  .lp-hero-btn-primary,
-  .lp-hero-btn-ghost,
   .lp-cta-white,
   .lp-cta-ghost {
     width: 100%;
     max-width: 320px;
     justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
   }
-  .lp-cat-grid {
-    grid-template-columns: 1fr;
+  .lp-cta-trust-bar {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
   }
-  .lp-hero-stats-bar {
-    gap: 1.25rem;
-  }
-  .lp-hero-stat-sep {
+  .trust-dot {
     display: none;
   }
 }

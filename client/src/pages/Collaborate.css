@@ -579,11 +579,38 @@
 @media (max-width: 1024px) {
   .collaborate-layout {
     grid-template-columns: 1fr;
+    padding-top: 60px;
   }
-  .collab-sidebar, .collab-inbox-sidebar {
+  .collab-sidebar {
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #E5E0DB;
+  }
+  .studio-nav-menu {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
+  }
+  .studio-nav-item {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .collab-inbox-sidebar {
     display: none;
+  }
+  .collab-main-content {
+    padding: 1.5rem 1rem;
   }
   .project-cards-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .direct-text-modal-box {
+    width: 95%;
+    max-width: 95%;
   }
 }

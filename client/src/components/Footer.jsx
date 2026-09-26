@@ -282,12 +282,40 @@ export default function Footer() {
           }
         }
 
-        @media (max-width: 600px) {
-          .slate-footer-inner {
-            grid-template-columns: 1fr;
+        @media (max-width: 640px) {
+          .for-prof-inner {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.25rem;
+            padding: 0 1.25rem;
+          }
+          .for-prof-titles {
+            text-align: center;
           }
           .for-prof-form {
+            width: 100%;
             max-width: 100%;
+            flex-direction: column;
+            gap: 0.65rem;
+          }
+          .btn-prof-signup {
+            width: 100%;
+            padding: 0.75rem;
+          }
+          .slate-footer-inner {
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding: 0 1.25rem;
+            gap: 2rem;
+          }
+          .slate-col {
+            align-items: center;
+          }
+          .social-icons-row {
+            justify-content: center;
+          }
+          .slate-brand-col {
+            align-items: center;
           }
         }
       `}</style>
