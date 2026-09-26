@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.bak
+
+# Production Builds
+dist/
+dist-ssr/
+client/dist/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.env.local
+
+# Databases & Local Storage
+*.sqlite
+*.sqlite3
+*.db
+server/database.sqlite
+
+# Media uploads (preserve directory via .gitkeep)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Vercel & Build Caches
+.cache/
+.temp/
+.tmp/
+.vercel

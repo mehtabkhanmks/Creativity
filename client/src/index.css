@@ -1,0 +1,336 @@
+/* ═══════════════════════════════════════════════════════════
+   ANTIGRAVITY — Design System & Global Styles
+   Matched to Design Mockups: Playfair Display + Inter,
+   Primary #0F172A, Secondary #6366F1, Tertiary #0D9488, Neutral #64748B
+   ═══════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Core Perini Luxury Architectural Palette */
+  --primary:        #D92D20; /* Signature Terracotta Red */
+  --primary-light:  #EF4444;
+  --secondary:      #527D90; /* Mediterranean Slate Blue */
+  --secondary-hover:#426879;
+  --secondary-light:rgba(82, 125, 144, 0.12);
+  --tertiary:       #0F766E; /* Deep Teal */
+  --tertiary-light: rgba(15, 118, 110, 0.12);
+  --accent-ochre:   #C27D38; /* Ochre Gold */
+  --accent-stone:   #7E746C; /* Warm Stone */
+  --neutral:        #6B625B; /* Slate Warm */
+  --neutral-light:  #E5E0DB;
+  --neutral-border: #E5E0DB;
+  
+  /* Surfaces & Warm Architectural Backgrounds */
+  --bg-page:        #F7F5F2; /* Warm linen stone canvas */
+  --bg-base:        #F7F5F2;
+  --bg-surface:     #FFFFFF; /* Pure crisp white card surface */
+  --bg-card:        #FFFFFF;
+  --bg-card-hover:  #FAF9F7;
+  --bg-panel:       #EFECE6; /* Segmented stone surface */
+  --bg-subtle:      #F0ECE7;
+  --border:         #E5E0DB;
+  --border-light:   #EBE7E2;
+  --border-focus:   #D92D20;
+
+  /* Typography (Deep Espresso & Warm Slate) */
+  --text-main:      #1A1614; /* Deep espresso charcoal */
+  --text-primary:   #1A1614;
+  --text-body:      #4A433E; /* Warm slate body text */
+  --text-secondary: #6B625B;
+  --text-muted:     #8C827A;
+  --text-faint:     #A89F97;
+  --font-headline:  'Playfair Display', Georgia, serif;
+  --font-head:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-label:     'Inter', sans-serif;
+
+  /* Accents */
+  --violet:         #D92D20;
+  --violet-l:       #EF4444;
+  --green:          #10B981;
+  --green-l:        #059669;
+  --gold:           #C27D38;
+  --gold-l:         #D97706;
+  --grad-violet:    linear-gradient(135deg, #D92D20, #C27D38);
+
+  /* Radii & Shadows */
+  --radius-sm:      4px;
+  --radius-md:      6px;
+  --radius-lg:      8px;
+  --radius-xl:      12px;
+  --radius-pill:    9999px;
+  
+  --shadow-sm:      0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md:      0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg:      0 12px 30px rgba(0, 0, 0, 0.12);
+  --transition:     all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --container:      1560px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #EFECE6; }
+::-webkit-scrollbar-thumb { background: #C5BCB6; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #A59C96; }
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+input, textarea, select, button { font-family: inherit; }
+
+/* ── Global Layout Containers ── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  padding-top: 76px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Typography Utilities ── */
+.font-headline {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-label {
+  font-family: var(--font-label);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+.btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: #FFFFFF;
+}
+.btn-secondary:hover {
+  background: var(--secondary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.btn-outlined {
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF;
+  border: 1px solid var(--border-light);
+}
+.btn-outlined:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn-inverted {
+  background: #FFFFFF;
+  color: #070B16;
+}
+.btn-inverted:hover {
+  background: #E2E8F0;
+}
+
+.btn-light {
+  background: var(--bg-panel);
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+}
+.btn-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+  border-radius: var(--radius-sm);
+}
+
+.btn-lg {
+  padding: 0.85rem 1.85rem;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+}
+
+/* ── Badges ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.22rem 0.65rem;
+  border-radius: var(--radius-pill);
+  text-transform: capitalize;
+}
+
+.badge-verified {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.badge-reviewing {
+  background: rgba(245, 158, 11, 0.15);
+  color: #FBBF24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-archived {
+  background: rgba(148, 163, 184, 0.12);
+  color: #94A3B8;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.badge-category {
+  background: rgba(14, 165, 233, 0.15);
+  color: #38BDF8;
+  border: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+.badge-role {
+  background: rgba(99, 102, 241, 0.18);
+  color: #A5B4FC;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ── Form Inputs ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.form-input {
+  padding: 0.7rem 1rem;
+  background: rgba(13, 21, 39, 0.85);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: #64748B;
+}
+
+.form-input:focus {
+  background: rgba(17, 28, 53, 0.95);
+  border-color: var(--secondary-hover);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ── Cards & Surfaces ── */
+.surface-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  color: var(--text-body);
+}
+
+.surface-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Modal Backdrop & Box ── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 20, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-box {
+  background: #0D1527;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 540px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  animation: scaleIn 0.2s ease-out;
+  color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}

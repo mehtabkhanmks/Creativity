@@ -1,0 +1,346 @@
+/* ── Auth & Gmail Verification Code Styles (Dark Cosmic Theme) ── */
+.auth-verification-page {
+  min-height: calc(100vh - 70px);
+  background: #070B16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.auth-card-wrapper {
+  background: #0D1527;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 580px;
+  padding: 2.75rem 2.5rem;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-brand-logo {
+  font-family: var(--font-headline);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.auth-title {
+  font-family: var(--font-headline);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #FFFFFF !important;
+  margin-bottom: 0.4rem;
+}
+
+.auth-subtitle {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  line-height: 1.5;
+}
+
+.auth-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+/* Role Selection Grid */
+.role-selection-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.role-option-card {
+  background: #111C35;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.role-option-card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(17, 28, 53, 0.95);
+}
+
+.role-option-card.active {
+  border-color: #38BDF8;
+  background: rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+}
+
+.role-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.role-icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #0D1527;
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.role-option-card.active .role-icon-circle {
+  background: #6366F1;
+  color: #FFFFFF;
+}
+
+.role-badge-chip {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #94A3B8;
+  text-transform: uppercase;
+}
+
+.role-option-card.active .role-badge-chip {
+  color: #38BDF8;
+}
+
+.role-title-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+}
+
+.role-desc-text {
+  font-size: 0.75rem;
+  color: #CBD5E1;
+  line-height: 1.35;
+}
+
+/* Inputs with icon */
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #64748B;
+  pointer-events: none;
+}
+
+.form-input.has-icon {
+  padding-left: 2.75rem;
+}
+
+/* OTP Digits Input */
+.otp-digits-input {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 12px;
+  text-align: center;
+  color: #38BDF8;
+  padding: 0.85rem;
+  background: #111C35;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.otp-digits-input:focus {
+  background: #131E38;
+  border-color: #38BDF8;
+}
+
+.demo-code-banner {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #34D399;
+}
+
+.demo-code-banner strong {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-actions-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.timer-text {
+  color: #94A3B8;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #38BDF8;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+.dot-divider {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+  .auth-card-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ── Google Sign In Button & Account Chooser Modal ── */
+.btn-google-auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  background: #FFFFFF;
+  color: #1F2937;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  margin-bottom: 0.75rem;
+}
+
+.btn-google-auth:hover {
+  background: #F9FAFB;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.auth-divider-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #64748B;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.auth-divider-line::before,
+.auth-divider-line::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.auth-divider-line:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.auth-divider-line:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+.google-account-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.google-account-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  background: #111C35;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.google-account-item:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: #38BDF8;
+}
+
+.google-avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.google-account-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.google-user-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #FFFFFF;
+}
+
+.google-user-email {
+  font-size: 0.8rem;
+  color: #94A3B8;
+}
+
+.google-role-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38BDF8;
+}
+

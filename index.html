@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Antigravity — A universal marketplace for human creativity &amp; intellectual property. Upload, protect, sell, license, fund, or co-build any original idea. You create. The world discovers." />
+  <meta property="og:title" content="Antigravity — Create. Share. Sell. Build." />
+  <meta property="og:description" content="Turn any original idea into a tradeable, buildable, discoverable asset." />
+  <title>Antigravity — Create. Share. Sell. Build.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Antigravity</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#transactions" class="nav-link">Transactions</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+
+      </ul>
+      <div class="nav-actions">
+        <a href="#waitlist" class="btn btn-ghost">Sign In</a>
+        <a href="#waitlist" class="btn btn-primary">Get Early Access</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+      <li><a href="#categories" class="mobile-link">Categories</a></li>
+      <li><a href="#transactions" class="mobile-link">Transactions</a></li>
+      <li><a href="#features" class="mobile-link">Features</a></li>
+
+      <li><a href="#waitlist" class="btn btn-primary" style="display:block;text-align:center;margin-top:1rem;">Get Early Access</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Now accepting early creators &amp; investors</span>
+      </div>
+
+      <h1 class="hero-headline" id="hero-headline">
+        <span class="line">You <em>create.</em></span>
+        <span class="line">The world <em>discovers.</em></span>
+      </h1>
+
+      <p class="hero-sub" id="hero-sub">
+        A universal marketplace for human creativity — where anyone with an original idea can publish, protect, sell, license, fund it, or find people to help build it.
+      </p>
+
+      <div class="hero-tagline" id="hero-tagline">
+        <span class="tag-word" data-color="violet">Create.</span>
+        <span class="tag-word" data-color="blue">Share.</span>
+        <span class="tag-word" data-color="cyan">Sell.</span>
+        <span class="tag-word" data-color="gold">Build.</span>
+      </div>
+
+      <div class="hero-cta" id="hero-cta">
+        <a href="#waitlist" class="btn btn-hero-primary">Start Creating Free</a>
+        <a href="#how-it-works" class="btn btn-hero-ghost">
+          <span class="play-icon">▶</span> See How It Works
+        </a>
+      </div>
+
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="11">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Transaction Types</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Creator-First</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="hero-visual">
+      <div class="floating-cards">
+        <div class="fcard fcard-1">
+          <div class="fcard-icon">📖</div>
+          <div class="fcard-info">
+            <div class="fcard-title">Epic Fantasy Novel</div>
+            <div class="fcard-meta">License · $2,400</div>
+          </div>
+          <div class="fcard-badge verified">✓ Verified</div>
+        </div>
+        <div class="fcard fcard-2">
+          <div class="fcard-icon">🚀</div>
+          <div class="fcard-info">
+            <div class="fcard-title">SaaS Startup Concept</div>
+            <div class="fcard-meta">Invest · $50K target</div>
+          </div>
+          <div class="fcard-badge invest">⚡ Seeking Funds</div>
+        </div>
+        <div class="fcard fcard-3">
+          <div class="fcard-icon">🎬</div>
+          <div class="fcard-info">
+            <div class="fcard-title">Screenplay Concept</div>
+            <div class="fcard-meta">For Sale · $8,000</div>
+          </div>
+          <div class="fcard-badge new">🔥 New</div>
+        </div>
+        <div class="fcard fcard-4">
+          <div class="fcard-icon">🎮</div>
+          <div class="fcard-info">
+            <div class="fcard-title">Game Design Doc</div>
+            <div class="fcard-meta">Collaborate · Co-found</div>
+          </div>
+          <div class="fcard-badge collab">👥 Open</div>
+        </div>
+        <div class="fcard fcard-5">
+          <div class="fcard-icon">🔬</div>
+          <div class="fcard-info">
+            <div class="fcard-title">Research Discovery</div>
+            <div class="fcard-meta">License · $15,000</div>
+          </div>
+          <div class="fcard-badge verified">✓ Verified</div>
+        </div>
+      </div>
+      <div class="pulse-ring"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ THREE SIDES ═══════════════════════════ -->
+  <section class="three-sides section" id="three-sides">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">The Platform</div>
+        <h2 class="section-title">Built for three kinds of people</h2>
+        <p class="section-desc">Whether you create, discover, or build — this is your marketplace.</p>
+      </div>
+
+      <div class="sides-grid">
+        <div class="side-card side-creator" data-side="creator">
+          <div class="side-glow"></div>
+          <div class="side-icon-wrap">
+            <div class="side-icon">✦</div>
+          </div>
+          <div class="side-tag">Creator</div>
+          <h3 class="side-title">"I have something valuable."</h3>
+          <p class="side-desc-text">Upload any original idea. Protect it with a timestamp fingerprint. Set your terms — sell outright, license it, seek investment, or recruit collaborators.</p>
+          <ul class="side-actions">
+            <li><span class="action-dot violet"></span>Upload &amp; Protect</li>
+            <li><span class="action-dot violet"></span>Set Price / Terms</li>
+            <li><span class="action-dot violet"></span>Publish &amp; Earn</li>
+            <li><span class="action-dot violet"></span>Recruit Your Team</li>
+          </ul>
+          <a href="#waitlist" class="side-cta">Start Creating →</a>
+        </div>
+
+        <div class="side-card side-buyer" data-side="buyer">
+          <div class="side-glow"></div>
+          <div class="side-icon-wrap">
+            <div class="side-icon">◈</div>
+          </div>
+          <div class="side-tag">Buyer / Investor</div>
+          <h3 class="side-title">"I'm looking for something valuable."</h3>
+          <p class="side-desc-text">Search thousands of verified, timestamped ideas across every creative and commercial category. Buy full rights, license for use, or invest in promising concepts.</p>
+          <ul class="side-actions">
+            <li><span class="action-dot blue"></span>Browse &amp; Discover</li>
+            <li><span class="action-dot blue"></span>NDA-gated Previews</li>
+            <li><span class="action-dot blue"></span>Secure Escrow Deals</li>
+            <li><span class="action-dot blue"></span>Portfolio of Ideas</li>
+          </ul>
+          <a href="#waitlist" class="side-cta">Start Discovering →</a>
+        </div>
+
+        <div class="side-card side-collab" data-side="collab">
+          <div class="side-glow"></div>
+          <div class="side-icon-wrap">
+            <div class="side-icon">⬡</div>
+          </div>
+          <div class="side-tag">Collaborator</div>
+          <h3 class="side-title">"I want to help build something."</h3>
+          <p class="side-desc-text">Build a skills profile. Get AI-matched to ideas that need exactly what you offer. Join teams, co-found projects, and earn equity or credit for your contributions.</p>
+          <ul class="side-actions">
+            <li><span class="action-dot cyan"></span>Skills Profile</li>
+            <li><span class="action-dot cyan"></span>AI Match Engine</li>
+            <li><span class="action-dot cyan"></span>Join / Co-found</li>
+            <li><span class="action-dot cyan"></span>Equity Agreements</li>
+          </ul>
+          <a href="#waitlist" class="side-cta">Find Your Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ HOW IT WORKS ═══════════════════════════ -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Process</div>
+        <h2 class="section-title">From idea to income in 10 steps</h2>
+        <p class="section-desc">A streamlined creator journey — designed to protect your work and maximize its reach.</p>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="steps-line"></div>
+        <div class="steps-grid">
+          <div class="step-item" data-step="1">
+            <div class="step-dot"><span>1</span></div>
+            <div class="step-card">
+              <div class="step-icon">🪪</div>
+              <h4>Sign Up &amp; Verify</h4>
+              <p>Create your account with KYC-lite identity verification to build trust from day one.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="2">
+            <div class="step-dot"><span>2</span></div>
+            <div class="step-card">
+              <div class="step-icon">📤</div>
+              <h4>Upload Your Idea</h4>
+              <p>Text, PDF, video pitch, images, audio, or code — any format your idea lives in.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="3">
+            <div class="step-dot"><span>3</span></div>
+            <div class="step-card">
+              <div class="step-icon">🔐</div>
+              <h4>Auto-Fingerprint</h4>
+              <p>Instant timestamped cryptographic hash — proof of authorship, logged immutably.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="4">
+            <div class="step-dot"><span>4</span></div>
+            <div class="step-card">
+              <div class="step-icon">🏷️</div>
+              <h4>Categorize &amp; Tag</h4>
+              <p>Place your idea into the right category and add tags so the right people find it.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="5">
+            <div class="step-dot"><span>5</span></div>
+            <div class="step-card">
+              <div class="step-icon">⚙️</div>
+              <h4>Choose Availability</h4>
+              <p>For Sale, For License, Seeking Investment, Seeking Collaborators — or all of the above.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="6">
+            <div class="step-dot"><span>6</span></div>
+            <div class="step-card">
+              <div class="step-icon">💰</div>
+              <h4>Set Your Terms</h4>
+              <p>Price it, set license terms, define a funding target, or outline what collaborators you need.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="7">
+            <div class="step-dot"><span>7</span></div>
+            <div class="step-card">
+              <div class="step-icon">🌐</div>
+              <h4>Publish</h4>
+              <p>Go public, release a teaser with NDA-gated full content, or invite-only private listings.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="8">
+            <div class="step-dot"><span>8</span></div>
+            <div class="step-card">
+              <div class="step-icon">🤖</div>
+              <h4>AI Matching</h4>
+              <p>Activate "Find people who believe in this idea" to get matched with buyers, investors, and builders.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="9">
+            <div class="step-dot"><span>9</span></div>
+            <div class="step-card">
+              <div class="step-icon">📋</div>
+              <h4>Manage Offers</h4>
+              <p>Review inquiries, negotiate terms, and manage collaboration requests from your dashboard.</p>
+            </div>
+          </div>
+          <div class="step-item" data-step="10">
+            <div class="step-dot"><span>10</span></div>
+            <div class="step-card">
+              <div class="step-icon">🎉</div>
+              <h4>Close the Deal</h4>
+              <p>Funds released from escrow on delivery. Legal templates auto-generated. Reputation built.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CATEGORIES ═══════════════════════════ -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Categories</div>
+        <h2 class="section-title">If you created it, it belongs here</h2>
+        <p class="section-desc">Eleven content verticals — and growing. Any original work, any format, any field.</p>
+      </div>
+
+      <div class="categories-grid">
+        <div class="cat-card" data-cat="stories">
+          <div class="cat-icon">📖</div>
+          <div class="cat-name">Stories &amp; Novels</div>
+          <div class="cat-count">2,400+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="screenplays">
+          <div class="cat-icon">🎬</div>
+          <div class="cat-name">Screenplays &amp; Film Concepts</div>
+          <div class="cat-count">1,100+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="business">
+          <div class="cat-icon">🚀</div>
+          <div class="cat-name">Business &amp; Startup Concepts</div>
+          <div class="cat-count">3,800+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="research">
+          <div class="cat-icon">🔬</div>
+          <div class="cat-name">Research &amp; Discoveries</div>
+          <div class="cat-count">890+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="creative">
+          <div class="cat-icon">🎨</div>
+          <div class="cat-name">Creative Concepts</div>
+          <div class="cat-count">4,200+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="games">
+          <div class="cat-icon">🎮</div>
+          <div class="cat-name">Game Concepts</div>
+          <div class="cat-count">1,650+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="ai">
+          <div class="cat-icon">🤖</div>
+          <div class="cat-name">AI &amp; Software Concepts</div>
+          <div class="cat-count">2,900+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="design">
+          <div class="cat-icon">📐</div>
+          <div class="cat-name">Designs &amp; Products</div>
+          <div class="cat-count">1,780+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="social">
+          <div class="cat-icon">🌍</div>
+          <div class="cat-name">Social &amp; Environmental Solutions</div>
+          <div class="cat-count">680+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="education">
+          <div class="cat-icon">📚</div>
+          <div class="cat-name">Educational Material</div>
+          <div class="cat-count">1,430+ listings</div>
+        </div>
+        <div class="cat-card" data-cat="poetry">
+          <div class="cat-icon">✍️</div>
+          <div class="cat-name">Poetry &amp; Writing</div>
+          <div class="cat-count">3,100+ listings</div>
+        </div>
+        <div class="cat-card cat-more">
+          <div class="cat-icon">＋</div>
+          <div class="cat-name">And More Coming</div>
+          <div class="cat-count">Suggest a category →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TRANSACTIONS ═══════════════════════════ -->
+  <section class="transactions section" id="transactions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Transaction Types</div>
+        <h2 class="section-title">Six ways to turn an idea into value</h2>
+        <p class="section-desc">Beyond a simple "buy" — a full spectrum of how creativity flows between people.</p>
+      </div>
+
+      <div class="tx-grid">
+        <div class="tx-card tx-buy">
+          <div class="tx-num">01</div>
+          <div class="tx-icon-wrap"><div class="tx-icon">💎</div></div>
+          <div class="tx-type">BUY</div>
+          <h3 class="tx-title">Purchase Full Rights</h3>
+          <p class="tx-desc">Complete ownership transfers to the buyer. The creator sells all rights — permanently and cleanly.</p>
+          <div class="tx-effect"><span>Ownership Effect:</span> Full transfer to buyer</div>
+        </div>
+
+        <div class="tx-card tx-license">
+          <div class="tx-num">02</div>
+          <div class="tx-icon-wrap"><div class="tx-icon">📜</div></div>
+          <div class="tx-type">LICENSE</div>
+          <h3 class="tx-title">Pay to Use</h3>
+          <p class="tx-desc">Buyer gets usage rights under defined terms. Creator retains full ownership and can license to others.</p>
+          <div class="tx-effect"><span>Ownership Effect:</span> Creator retains ownership</div>
+        </div>
+
+        <div class="tx-card tx-invest">
+          <div class="tx-num">03</div>
+          <div class="tx-icon-wrap"><div class="tx-icon">📈</div></div>
+          <div class="tx-type">INVEST</div>
+          <h3 class="tx-title">Fund Development</h3>
+          <p class="tx-desc">Investor funds the project in exchange for equity or revenue share. Creator keeps creative control.</p>
+          <div class="tx-effect"><span>Ownership Effect:</span> Negotiated equity/revenue share</div>
+        </div>
+
+        <div class="tx-card tx-collab">
+          <div class="tx-num">04</div>
+          <div class="tx-icon-wrap"><div class="tx-icon">🤝</div></div>
+          <div class="tx-type">COLLABORATE</div>
+          <h3 class="tx-title">Join to Build</h3>
+          <p class="tx-desc">A team forms around the idea. Equity and credit are defined up-front through platform-generated agreements.</p>
+          <div class="tx-effect"><span>Ownership Effect:</span> Equity/credit split defined</div>
+        </div>
+
+        <div class="tx-card tx-support">
+          <div class="tx-num">05</div>
+          <div class="tx-icon-wrap"><div class="tx-icon">❤️</div></div>
+          <div class="tx-type">SUPPORT</div>
+          <h3 class="tx-title">Tip / Patronage</h3>
+          <p class="tx-desc">Pure support — Patreon-style. No rights transfer. Believers fund creators they want to see succeed.</p>
+          <div class="tx-effect"><span>Ownership Effect:</span> No rights transfer</div>
+        </div>
+
+        <div class="tx-card tx-contact">
+          <div class="tx-num">06</div>
+          <div class="tx-icon-wrap"><div class="tx-icon">💬</div></div>
+          <div class="tx-type">CONTACT</div>
+          <h3 class="tx-title">Open a Conversation</h3>
+          <p class="tx-desc">Discovery and negotiation phase. No commitment. Just the start of a conversation that could become a deal.</p>
+          <div class="tx-effect"><span>Ownership Effect:</span> Discovery/negotiation only</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FEATURES ═══════════════════════════ -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Core Modules</div>
+        <h2 class="section-title">Everything your idea needs to succeed</h2>
+        <p class="section-desc">Seven integrated feature modules — built to protect, discover, and transact.</p>
+      </div>
+
+      <div class="features-bento">
+        <!-- Idea Vault -->
+        <div class="bento-card bento-large feat-vault">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">🔒</div>
+          <div class="feat-tag">Module 01</div>
+          <h3>Idea Vault</h3>
+          <p>Multi-format upload with automatic timestamped fingerprinting. Cryptographic proof of authorship. Four visibility tiers: Public, Teaser, Private, Draft.</p>
+          <div class="feat-pills">
+            <span class="pill">PDF</span>
+            <span class="pill">Video Pitch</span>
+            <span class="pill">Audio</span>
+            <span class="pill">Code Repos</span>
+            <span class="pill">Images</span>
+          </div>
+        </div>
+
+        <!-- Marketplace -->
+        <div class="bento-card bento-medium feat-market">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">🔍</div>
+          <div class="feat-tag">Module 02</div>
+          <h3>Marketplace &amp; Discovery</h3>
+          <p>Advanced search with filters for category, price, verification status, and project stage. Trending surfaces and creator storefronts.</p>
+        </div>
+
+        <!-- AI Matching -->
+        <div class="bento-card bento-medium feat-ai">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">🤖</div>
+          <div class="feat-tag">Module 03</div>
+          <h3>AI Matching Engine</h3>
+          <p>"Find people who believe in this idea" — embedding-based matching with explainable "why this match" reasoning.</p>
+        </div>
+
+        <!-- Transaction Engine -->
+        <div class="bento-card bento-medium feat-tx">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">⚖️</div>
+          <div class="feat-tag">Module 04</div>
+          <h3>Transaction &amp; Rights Engine</h3>
+          <p>Escrow-based payments. Auto-generated legal templates: NDA, license, IP sale, equity-split. Milestone-based payouts.</p>
+        </div>
+
+        <!-- Reputation -->
+        <div class="bento-card bento-medium feat-rep">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">⭐</div>
+          <div class="feat-tag">Module 05</div>
+          <h3>Reputation &amp; Trust</h3>
+          <p>Verification badges — Identity, Originality, Track Record. Two-sided reviews. Plagiarism scan against internal corpus + web sources.</p>
+        </div>
+
+        <!-- Workspace -->
+        <div class="bento-card bento-medium feat-workspace">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">🛠️</div>
+          <div class="feat-tag">Module 06</div>
+          <h3>Project Workspace</h3>
+          <p>Shared task board, file storage, in-app messaging. Contribution log for dispute resolution. Milestone tracker tied to escrowed funds.</p>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="bento-card bento-large feat-dashboard">
+          <div class="bento-glow"></div>
+          <div class="feat-icon">📊</div>
+          <div class="feat-tag">Module 07</div>
+          <h3>Creator Dashboard</h3>
+          <p>Real-time analytics — views, inquiries, offers, conversion rates. Negotiation inbox. Earnings and payout history. Everything in one place.</p>
+          <div class="dashboard-mini">
+            <div class="dash-stat"><span class="dash-num">2.4K</span><span class="dash-lbl">Views</span></div>
+            <div class="dash-stat"><span class="dash-num">148</span><span class="dash-lbl">Inquiries</span></div>
+            <div class="dash-stat"><span class="dash-num">$12.6K</span><span class="dash-lbl">Earnings</span></div>
+            <div class="dash-stat"><span class="dash-num">94%</span><span class="dash-lbl">Satisfaction</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TRUST ═══════════════════════════ -->
+  <section class="trust section" id="trust">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-text">
+          <div class="section-label">Legal &amp; IP Framework</div>
+          <h2 class="section-title left">Built on trust.<br/>Designed for protection.</h2>
+          <p class="trust-desc">We know that an idea alone isn't legally protectable — we built the platform around that reality, not around false promises.</p>
+
+          <div class="trust-points">
+            <div class="trust-point">
+              <div class="tp-icon">📋</div>
+              <div class="tp-content">
+                <h4>Clear Legal Education</h4>
+                <p>We tell creators exactly what protection they have — copyright on expression, NDA-gated trade-secret, or patent-pending if they've filed. No overselling.</p>
+              </div>
+            </div>
+            <div class="trust-point">
+              <div class="tp-icon">🛡️</div>
+              <div class="tp-content">
+                <h4>NDA-Gated Previews</h4>
+                <p>Full idea details only visible under NDA. Buyers see a teaser — and commit to an NDA before the full pitch is revealed.</p>
+              </div>
+            </div>
+            <div class="trust-point">
+              <div class="tp-icon">⚖️</div>
+              <div class="tp-content">
+                <h4>Auto-Generated Legal Templates</h4>
+                <p>Platform-drafted NDA, licensing agreement, IP assignment, and equity-split templates. Always labelled as templates — not legal advice.</p>
+              </div>
+            </div>
+            <div class="trust-point">
+              <div class="tp-icon">🔍</div>
+              <div class="tp-content">
+                <h4>Plagiarism &amp; Dispute Process</h4>
+                <p>Duplicate detection on upload. Clear DMCA-style takedown and counter-notice process. Mediation before escalation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-visual">
+          <div class="trust-shield">
+            <div class="shield-outer">
+              <div class="shield-mid">
+                <div class="shield-inner">
+                  <div class="shield-icon">🛡️</div>
+                  <div class="shield-text">Creator Protected</div>
+                </div>
+              </div>
+            </div>
+            <div class="shield-orbits">
+              <div class="orbit-item o1">🔐 Fingerprint</div>
+              <div class="orbit-item o2">📜 NDA</div>
+              <div class="orbit-item o3">⚖️ Legal Template</div>
+              <div class="orbit-item o4">✓ Verified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════════════════ MONETIZATION ═══════════════════════════ -->
+  <section class="monetization section" id="monetization">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Business Model</div>
+        <h2 class="section-title">Six revenue streams, built to scale</h2>
+        <p class="section-desc">We only win when creators win — aligned incentives from day one.</p>
+      </div>
+
+      <div class="mono-grid">
+        <div class="mono-card">
+          <div class="mono-icon">💸</div>
+          <h4>Transaction Fee</h4>
+          <p>5–15% commission (tiered by deal size) on every Buy, License, and Invest deal closed.</p>
+          <div class="mono-tag">Primary Revenue</div>
+        </div>
+        <div class="mono-card">
+          <div class="mono-icon">⭐</div>
+          <h4>Pro Subscriptions</h4>
+          <p>Creator &amp; Investor Pro plans — more listings, priority placement, advanced AI matching, analytics.</p>
+          <div class="mono-tag">Recurring Revenue</div>
+        </div>
+        <div class="mono-card">
+          <div class="mono-icon">🚀</div>
+          <h4>Featured Listings</h4>
+          <p>Paid visibility boosts — clearly labeled as promoted, never disguised as organic results.</p>
+          <div class="mono-tag">Advertising</div>
+        </div>
+        <div class="mono-card">
+          <div class="mono-icon">✅</div>
+          <h4>Verification Services</h4>
+          <p>Paid formal copyright-filing assistance and deeper plagiarism/background checks.</p>
+          <div class="mono-tag">Services</div>
+        </div>
+        <div class="mono-card">
+          <div class="mono-icon">🏦</div>
+          <h4>Escrow Processing</h4>
+          <p>Standard payment processing margin on all escrow-held transactions across the platform.</p>
+          <div class="mono-tag">Payments</div>
+        </div>
+        <div class="mono-card">
+          <div class="mono-icon">🛠️</div>
+          <h4>Workspace Premium</h4>
+          <p>Premium project-management features for larger teams — advanced task boards, file storage, analytics.</p>
+          <div class="mono-tag">SaaS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ METRICS ═══════════════════════════ -->
+  <section class="metrics section" id="metrics">
+    <div class="container">
+      <div class="metrics-inner">
+        <div class="metrics-text">
+          <div class="section-label">KPIs We Track</div>
+          <h2 class="section-title left">Measuring what matters</h2>
+          <p>We track platform health from Day 1 — designed to detect failure modes before they become crises.</p>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-icon">📋</div>
+            <div class="metric-label">Listings per Week</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">💬</div>
+            <div class="metric-label">% Listings with ≥1 Inquiry</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">⏱️</div>
+            <div class="metric-label">Time-to-First-Offer</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">✅</div>
+            <div class="metric-label">Transaction Completion Rate</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">🔁</div>
+            <div class="metric-label">Repeat Creator/Buyer Rate</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">⚖️</div>
+            <div class="metric-label">Dispute Rate</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">🤖</div>
+            <div class="metric-label">Match Acceptance Rate</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">📈</div>
+            <div class="metric-label">Revenue per Creator</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CTA / WAITLIST ═══════════════════════════ -->
+  <section class="waitlist section" id="waitlist">
+    <div class="waitlist-bg">
+      <div class="wl-orb wl-orb-1"></div>
+      <div class="wl-orb wl-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="waitlist-inner">
+        <div class="wl-badge">
+          <span class="badge-dot"></span>
+          <span>Early Access — Limited Spots</span>
+        </div>
+        <h2 class="wl-headline">Your idea deserves<br />a place in the world.</h2>
+        <p class="wl-sub">Join thousands of creators, investors, and builders waiting to launch on Day 1.</p>
+
+        <form class="wl-form" id="wl-form" novalidate>
+          <div class="wl-role-select">
+            <label class="role-opt">
+              <input type="radio" name="role" value="creator" id="role-creator" checked />
+              <span>✦ Creator</span>
+            </label>
+            <label class="role-opt">
+              <input type="radio" name="role" value="buyer" id="role-buyer" />
+              <span>◈ Buyer/Investor</span>
+            </label>
+            <label class="role-opt">
+              <input type="radio" name="role" value="collaborator" id="role-collab" />
+              <span>⬡ Collaborator</span>
+            </label>
+          </div>
+          <div class="wl-inputs">
+            <input type="text" placeholder="Your full name" id="wl-name" class="wl-input" required />
+            <input type="email" placeholder="Your email address" id="wl-email" class="wl-input" required />
+            <button type="submit" class="btn btn-wl-submit" id="wl-submit">
+              <span class="btn-text">Get Early Access</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+          <p class="wl-legal">No spam. Unsubscribe anytime. We'll contact you when early access opens.</p>
+        </form>
+
+        <div class="wl-success" id="wl-success" style="display:none;">
+          <div class="success-icon">🎉</div>
+          <h3>You're on the list!</h3>
+          <p>We'll reach out when early access opens. Prepare your best ideas.</p>
+        </div>
+
+        <div class="wl-social-proof">
+          <div class="wl-avatars">
+            <div class="wl-avatar" style="background:#7c3aed">C</div>
+            <div class="wl-avatar" style="background:#2563eb">A</div>
+            <div class="wl-avatar" style="background:#0891b2">M</div>
+            <div class="wl-avatar" style="background:#059669">J</div>
+            <div class="wl-avatar" style="background:#d97706">S</div>
+          </div>
+          <span class="wl-proof-text">2,400+ people already on the waitlist</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">IdeaVault</span>
+          </a>
+          <p class="footer-tagline">"You create. The world discovers."</p>
+          <p class="footer-desc">A universal marketplace for human creativity — where any original idea becomes a tradeable, buildable, discoverable asset.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h5>Platform</h5>
+            <ul>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#transactions">Transactions</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Creators</h5>
+            <ul>
+              <li><a href="#waitlist">Start Creating</a></li>
+              <li><a href="#features">Idea Vault</a></li>
+              <li><a href="#trust">IP Protection</a></li>
+              <li><a href="#transactions">Pricing Your Work</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">NDA Template</a></li>
+              <li><a href="#">Dispute Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 IdeaVault. All rights reserved. Platform is a facilitator, not a guarantor of originality, legal ownership, or deal outcomes. Legal templates are not a substitute for qualified legal counsel.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
